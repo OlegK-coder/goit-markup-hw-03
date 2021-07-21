@@ -1,0 +1,395 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primery-background: #e5e5e5;
+  --secondary-background: #f5f4fa;
+  --special-background: #2f303a;
+  --primery-text-color: #212121;
+  --special-text-color: #2196f3;
+}
+
+body {
+  font-family: roboto, raleway, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  width: 1600px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ============== HEADER ============== */
+
+header {
+  background-color: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primery-text-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 17;
+  text-decoration: none;
+
+  margin-right: 93px;
+}
+
+.web-logo {
+  color: var(--special-text-color);
+}
+
+.nav-menu {
+  display: flex;
+
+  padding-left: 0;
+}
+
+.nav-menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-contacts {
+  display: flex;
+
+  padding-left: 0;
+}
+
+.mail {
+  margin-right: 50px;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1, 14;
+  color: #212121;
+  text-decoration: none;
+}
+
+.studio {
+  color: #2196f3;
+}
+
+.portfolio {
+  color: #2196f3;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--special-text-color);
+}
+
+.contacts-link {
+  font-weight: 500;
+  line-height: 1, 14;
+  color: #757575;
+  text-decoration: none;
+}
+
+.nav-contacts a:hover,
+.nav-contacts a:focus {
+  color: var(--special-text-color);
+}
+
+/* ============== HERO ============== */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--special-background);
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 36px;
+  letter-spacing: 0.06em;
+  background-color: var(--special-background);
+  color: #ffffff;
+}
+
+.hero-border-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2196f3;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1, 9;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ============== Services ============== */
+
+.services-section {
+  background-color: var(--primery-background);
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 94px;
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 17;
+  color: var(--primery-text-color);
+
+  max-width: 270px;
+  margin-bottom: 10px;
+}
+
+.services-text {
+  line-height: 1, 7;
+
+  max-width: 270px;
+}
+
+.services-images-title {
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  color: var(--primery-text-color);
+  margin-bottom: 50px;
+}
+
+.services-images {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+/* ============== Services ============== */
+
+.team-section {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  background-color: var(--secondary-background);
+  display: flex;
+
+  justify-content: space-between;
+  padding-left: 0;
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  color: var(--primery-text-color);
+  margin-bottom: 30px;
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 17;
+  text-align: center;
+  color: var(--primery-text-color);
+  padding-bottom: 10px;
+}
+
+.team-job {
+  font-size: 16px;
+  line-height: 1, 17;
+  text-align: center;
+  margin-bottom: 94px;
+}
+
+/* ============== Services ============== */
+
+.footer {
+  background-color: var(--special-background);
+}
+
+.foot-container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.logo1 {
+  display: block;
+  color: #ffffff;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1 17;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.adress {
+  display: block;
+  line-height: 1, 7;
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+
+.footer-item {
+  display: block;
+}
+
+.tel {
+  margin-bottom: 9px;
+}
+
+.footer-contacts-link {
+  line-height: 1, 7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  text-align: left;
+}
+
+/* ============== Portfolio buttons ============== */
+
+.portfolio-buttons-section {
+  background-color: #e5e5e5;
+}
+
+.portfolio-buttons-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.portfolio-filter-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+
+  color: #212121;
+  border-style: none;
+  font-size: 16px;
+  line-height: 1, 6;
+  cursor: pointer;
+  margin-bottom: 56;
+}
+
+.filter-button {
+  margin-right: 8px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #f5f4fa;
+}
+
+.filter-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.portfolio-card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.card-set-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  max-width: calc((100%-60px) / 3);
+  padding-left: 0px;
+  padding-right: 0;
+}
+
+.portfolio-title {
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 2;
+  color: #212121;
+  text-align: center;
+  background-color: #ffffff;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1, 9;
+  color: #757575;
+  text-align: center;
+  background-color: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 0;
+}
