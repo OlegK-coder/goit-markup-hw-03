@@ -32,9 +32,11 @@
             </ul>
          </nav>
 
-        <ul class="nav-contacts list">
-            <li><a class="contacts-link mail" lang="en" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="header-contacts list">
+            <li class="header-contacts-item mail">
+                <a class="contacts-link" lang="en" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="header-contacts-item">
+                <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul> 
     </div>
     </header>
@@ -45,8 +47,11 @@
 
         
         <section class="hero">
-           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-           <button class="hero-border-button" type="button">Заказать услугу</button>
+            <div class="hero-title-div">
+           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
+        </div>
+           <button class="button hero-border-button" type="button">Заказать услугу</button>
+    
         </section>
         
 
@@ -56,32 +61,49 @@
             <div class="container services-container">
              
             <ul class="services-list list">
-                <li>
+                <li class="services-list-item">
                     <h3 class="services-title">внимание к деталям</h3>
                     <p class="services-text">Идейные соображения, а также начало повседневной работы по формированию позиции</p>
                 </li>
-                <li>
+                <li class="services-list-item">
                     <h3 class="services-title">пунктуальность</h3>
                     <p class="services-text">Задача организации, в особенности же рамки обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="services-list-item">
                     <h3 class="services-title">планирование</h3>
                     <p class="services-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="services-list-item">
                     <h3 class="services-title">современные технологии</h3>
                     <p class="services-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
-            <div>
+            </div>
+            </section>
            
-
+           <section class="section services-images">
+               <div class="container services-images-container">
+           
           <h2 class="services-images-title">Чем мы занимаемся</h2>
 
             <ul class="services-images list">
-               <li><img src="./img/img1.jpg" alt="фотография мужчины, набирающего код" width="294"></li>
-               <li><img src="./img/img2.jpg" alt="фотография женщины, выбирающей дизайн интерфеса" width="294"></li>
-               <li><img src="./img/img3.jpg" alt="фотография человека, занимающегося графическим дизайном" width="294"></li>
+               <li class="services-images-item">
+                   <div class="thumb">
+                   <img src="./img/img1.jpg" alt="фотография мужчины, набирающего код" width="294">
+                </div>
+                </li>
+
+                <li class="services-images-item">
+                <div class="thumb">
+                    <img src="./img/img2.jpg" alt="фотография мужчины, набирающего код" width="294">
+                </div>
+                 </li>
+
+                <li class="services-images-item">
+                    <div class="thumb">
+                        <img src="./img/img3.jpg" alt="фотография мужчины, набирающего код" width="294">
+                    </div>
+                </li>
             </ul>
             </div>
             </section>
@@ -92,21 +114,33 @@
             <div class="container team-container">
           <h2 class="team-title">Наша команда</h2>
             <ul class="team-list list">
-                <li><img style="margin-bottom: 30px" src="./img/img4.jpg" alt="фотография дизайнера продуктов" width="270">
+                <li class="team-item">
+                    <img style="margin-bottom: 30px" src="./img/img4.jpg" alt="фотография дизайнера продуктов" width="270">
+                    <div class="team-content">
                     <h3 class="team-member">Игорь Демьяненко</h3>
                     <p class="team-job" lang="en">Product Designer</p>
+                </div>
                 </li>
-                <li><img style="margin-bottom: 30px" src="./img/img5.jpg" alt="фотография фронтенд-разработчика" width="270">
+                <li class="team-item">
+                    <img style="margin-bottom: 30px" src="./img/img5.jpg" alt="фотография фронтенд-разработчика" width="270">
+                    <div class="team-content">
                     <h3 class="team-member">Ольга Репина</h3>
                     <p  class="team-job"lang="en">Frontender Developer</p>
+                    </div>
                 </li>
-                <li><img style="margin-bottom: 30px"src="./img/img6.jpg" alt="фотография маркетолога" width="270">
+                <li class="team-item">
+                    <img style="margin-bottom: 30px"src="./img/img6.jpg" alt="фотография маркетолога" width="270">
+                    <div class="team-content">
                     <h3 class="team-member">Николай Тарасов</h3>
                     <p  class="team-job"lang="en">Marketing</p>
+                    </div>
                 </li>
-                <li><img style="margin-bottom: 30px" src="./img/img7.jpg" alt="фотография дизайнера пользовательского интерфейса" width="270">
+                <li class="team-item">
+                    <img style="margin-bottom: 30px" src="./img/img7.jpg" alt="фотография дизайнера пользовательского интерфейса" width="270">
+                    <div class="team-content">
                     <h3 class="team-member" >Михаил Ермаков</h3>
                     <p  class="team-job"lang="en" >UI Designer</p>
+                    </div>
                 </li>
             </ul>
             </div>
